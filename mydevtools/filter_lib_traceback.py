@@ -21,6 +21,8 @@ else:
                 if isinstance(filename, str) and any(excl in filename for excl in exclude):
                     continue
                 filtered.append(r)
+            if len(filtered) < len(records):
+                print("[mydevtools] Traceback from site-packages are filtered out.")
             return filtered if filtered else records
 
     def _install():
