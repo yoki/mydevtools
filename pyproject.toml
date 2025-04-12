@@ -1,6 +1,6 @@
 [project]
 name = "mydevtools"
-version = "0.1.1"
+version = "0.1.2"
 description = "Collection of small dev tools."
 authors = [
   { name="Yoki"}

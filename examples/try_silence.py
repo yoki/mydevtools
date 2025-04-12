@@ -12,8 +12,3 @@ warnings.warn("this should NOT be shown", DeprecationWarning)
 
 
 # %%
-from mydevtools import filter_lib_traceback
-import pandas as pd
-
-pd.DataFrame("str")
-# %%
