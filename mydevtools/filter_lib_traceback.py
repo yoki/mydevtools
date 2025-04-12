@@ -21,8 +21,6 @@ else:
                 if isinstance(filename, str) and any(excl in filename for excl in exclude):
                     continue
                 filtered.append(r)
-            if len(filtered) < len(records):
-                print("[mydevtools] Traceback from site-packages are filtered out.")
             return filtered if filtered else records
 
     def _install():
@@ -35,6 +33,7 @@ else:
 
             def ipython_exc_handler(*args, **kwargs):
                 etype, value, tb_obj = args[:3]
+                print("\033[96m[Tracebacks from site-packages are not shown]\033[0m", file=sys.stderr)
                 tb((etype, value, tb_obj))
 
             ip.set_custom_exc((Exception,), ipython_exc_handler)
