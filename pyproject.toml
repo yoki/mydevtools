@@ -1,0 +1,15 @@
+[project]
+name = "mydevtools"
+version = "0.1.0"
+description = "Collection of small dev tools."
+authors = [
+  { name="Yoki"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
