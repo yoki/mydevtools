@@ -9,14 +9,15 @@ A collection of developer tools to improve your Python development workflow.
 
 It automatically removes error traceback frames from site-packages just by importing.
 ```
-from mydevtools import filter_lib_traceback
+from mydevtools import filter_lib_traceback  # noqa: F401
+
 ```
 This can be safely commented out without affecting comments. 
 
 ### surpress waring
 Surpress all kind of warnings from Pandas and others
 ```
-from mydevtools import no_warning
+from mydevtools import no_warning  # noqa: F401
 ```
 This can be safely commented out without affecting comments. 
 
