@@ -29,7 +29,7 @@ else:
             return  # Not in IPython or Jupyter
 
         try:
-            tb = FilteredVerboseTB(call_pdb=False, ostream=sys.stderr)
+            tb = FilteredVerboseTB(include_vars=False)
 
             def ipython_exc_handler(*args, **kwargs):
                 etype, value, tb_obj = args[:3]

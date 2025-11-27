@@ -24,13 +24,13 @@ This can be safely commented out without affecting comments.
 ## Installation
 
 ```bash
-$ pip install git+https://github.com/yoki/mydevtools.git@v0.1.0
+$ pip install git+https://github.com/yoki/mydevtools.git@v0.1.3
 ```
 
 ## Memo for dev
 
 ```
-$ git clone git+https://github.com/yoki/mydevtools.git@v0.1.0
+$ git clone git+https://github.com/yoki/mydevtools.git@v0.1.3
 $ pip install -e .
 $ python examples/sample_usage.py
 $ git tag v0.1.1 -m "Bugfix"
